@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨ Modern Task Manager Pro</title>
+  <link rel="stylesheet" href="style (2).css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <div class="container">
+    <h2>✨ Task Manager Pro</h2>
+    
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="✍️ What needs to be done?">
+      <button class="add-btn" onclick="addTask()">➕ Add Task</button>
+    </div>
+    
+    <div class="task-input">
+      <input type="date" id="taskDate" placeholder="📅 Select date">
+      <input type="time" id="taskTime" placeholder="⏰ Set time">
+    </div>
+    
+
+    <h3>📋 Active Tasks</h3>
+    <div class="task-list" id="taskList"></div>
+
+    <h3>📈 Progress Overview</h3>
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-text" id="progressText">0% Completed</div>
+    </div>
+
+    <div class="task-list" id="taskList"></div>
+
+    <h3>📜 Task History</h3>
+    <div class="history" id="taskHistory"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
